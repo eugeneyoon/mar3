@@ -1,0 +1,218 @@
+.skip{
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  z-index:-999;
+  overflow: hidden;
+}
+
+.skip:focus, .skip:active{
+  background-color: #FFF6AB;
+  left: auto;
+  top: auto;
+  width: auto;
+  height: auto;
+  border: 3px solid green;
+  padding: 15px;
+  display: grid;
+  justify-content: center;
+  transition: ease .5s;
+  z-index:999;
+  overflow: auto
+}
+
+a{
+   color:black;
+   text-decoration: none;
+ }
+
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:active { text-decoration: none; color:white }
+
+body{
+    /* background-color:#bbbbbb; */
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+h1{
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+h2{
+  font-size: 18px;
+  padding: 0px 0px 10px;
+}
+
+.bgimage{
+    background: url("file://C:/Users/Eug/Desktop/UMSI 2018-2019/2019 Winter SI 539/feb24/images/closeupbg.jpg");
+}
+
+.banner{
+  display: block;
+  background-color: #ffffff;
+  font-size: 60px;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.current{
+  text-transform: uppercase;
+  font-style: italic;
+  color: black;
+  background-color: #ddd
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+nav a{
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 14px 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 850px) {
+  nav{
+    flex-direction: column;
+  }
+}
+
+main{
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.maintext{
+  flex: 60%;
+}
+
+.maintext p{
+  padding: 12px 0px;
+}
+
+.frontimages{
+  flex: 40%;
+}
+
+.frontimages img{
+  width: 49%;
+}
+
+@media screen and (max-width: 850px) {
+  main{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .frontimages img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .frontimages img{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .frontimages img{
+    width: 100%;
+  }
+}
+
+.strumpage{
+  display: flex;
+  flex-direction: column;
+}
+
+.strumpage p{
+  padding: 12px 0px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  border: 12px solid green;
+  padding: 24px;
+  margin: 24px;
+}
+
+footer{
+  padding: 24px;
+  text-align: center;
+}
+
+.banner{
+  justify-content: center;
+  width: 100%;
+}
+
+.chordsimages{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .chordsimages{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.magnoliaimages{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 30%;
+}
+
+.magnoliaimages img {
+  width: 150px;
+  padding: 6px 10px;
+}
+
+.diagrams{
+  width: 40vw;
+  height: 30%;
+}
+
+@media screen and (max-width: 850px) {
+  .diagrams{
+    width: 60vw;
+    height: 30vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
